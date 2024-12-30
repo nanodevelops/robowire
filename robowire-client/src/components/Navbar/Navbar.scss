@@ -1,0 +1,31 @@
+@use "../../sass/colors.scss" as colors;
+@use "../../sass/fonts.scss" as fonts;
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: colors.$color-lightsteelblue;
+
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  .nav-list a {
+    display: block;
+    font-size: 1.8em;
+    font-family: fonts.$body-font;
+    color: colors.$color-navyblue;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 2rem;
+  }
+  .nav-list a:hover {
+    border-bottom: 8px solid colors.$color-navyblue;
+    border-radius: 10px 20px 30px 40px/30px;
+  }
+}

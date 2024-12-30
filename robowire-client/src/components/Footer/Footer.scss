@@ -1,0 +1,19 @@
+@use "../../sass/fonts.scss" as fonts;
+
+footer {
+  font-family: fonts.$body-font;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-whiteSmoke);
+  border-top: 35px solid var(--main-steelBlue);
+
+  p {
+    margin: 2rem;
+    color: var(--main-navy);
+  }
+  i {
+    vertical-align: middle;
+  }
+}

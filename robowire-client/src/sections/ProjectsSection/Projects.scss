@@ -1,0 +1,48 @@
+@use "../../sass/colors.scss" as colors;
+@use "../../sass/fonts.scss" as fonts;
+
+.projects-page {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: colors.$color-whitesmoke;
+  color: colors.$color-navyblue;
+
+  .projects-page-header {
+    font-family: fonts.$body-font;
+    font-size: 1.9em;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10px 20px 30px 40px/30px;
+  }
+  .btn-show-all {
+    font-family: fonts.$body-font;
+    letter-spacing: 1.4px;
+    font-size: 1.8em;
+    color: colors.$color-navyblue;
+    background: colors.$color-lightsteelblue;
+    transition: background 0.5s ease-out;
+  }
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  .btn-show-all > i {
+    color: var(--main-navy);
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
+  }
+}
